@@ -1,0 +1,10 @@
+#pirate-ship {
+  position: absolute;
+  left: 0;
+  top: 50;
+}
+
+#move-pirate-ship {
+  height:40px;
+  width:100px;
+}
