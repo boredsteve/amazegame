@@ -1,10 +1,9 @@
-function PirateShip() {
-  this.location = 0
+function Maze() {
+  this.moves = 0
 }
 
-PirateShip.prototype = {
-  movement: 10,
-  incrementLocation: function() {
-    this.location += this.movement
+Maze.prototype = {
+  moveCount: function() {
+    this.moves += 1
   }
 }

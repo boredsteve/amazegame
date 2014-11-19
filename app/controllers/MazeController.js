@@ -3,17 +3,16 @@ function MazeController() {
   this.model = new Maze()
 }
 
-PirateShipController.prototype = {
+MazeController.prototype = {
   start: function() {
     this.bindListeners()
   },
   bindListeners: function() {
-    var button = this.view.getButton()
-    button.addEventListener('click', this.moveModel.bind(this))
+    .addEventListener('click', this.movePlayer.bind(this))
   },
-  moveModel: function() {
-    this.model.incrementLocation()
-    var newLocation = this.model.location
-    this.view.setShipLocation(newLocation)
+  movePlayer: function() {
+    this.model.moveCount()
+    var newCount = this.model.moves
+    this.view.showCount(newCount)
   }
-}
+};
