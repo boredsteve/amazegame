@@ -1,5 +1,5 @@
 var RestartController = function() {
-
+this.model = new Maze()
 }
 
 RestartController.prototype = {
@@ -16,5 +16,11 @@ RestartController.prototype = {
     startElement.addClass('active')
     activeElement.removeClass('active')
     activeElement.addClass('path')
+    this.model.moves = 0
+    console.log('after restarting, the moves is ' + this.model.moves)
+
   },
+  getMaze: function() {
+    return this.model
+  }
 }
