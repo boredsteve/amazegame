@@ -9,13 +9,16 @@
   width:100px;
 }*/
 
-
+#active{
+  background-color:red;
+}
 
 #easy-maze .row {
 
-  clear:both;
+  clear:both; /*makes each row go underneath each other*/
 }
-.row > div{
+
+.row > div{ /*styles all the children of the row*/
 
   width:2em;
   height: 2em;
@@ -28,8 +31,10 @@
 }
 
 .path{
-  background-color: chartreuse;
+  background-color: yellow;
 }
+
+
 
 
 
