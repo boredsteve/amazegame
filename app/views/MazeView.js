@@ -87,6 +87,33 @@ function moveDown() {
  }
 // }
 
+function moveUp() {
+  var here = $('.active')
+  var checkNull = here.previousElementSibling;
+  var index = 0
+  while(checkNull != null) {
+      index ++;
+      // console.log("I increased the count")
+    checkNull = checkNull.previousElementSibling;
+  }
+  // console.log(index)
+  var hereParent = here.parentElement
+  var hereParentSibling = hereParent.previousElementSibling
+  if (hereParentSibling != null) {
+    var up = hereParentSibling.children[index]
+      if (up.className != 'hedge') {
+        up.className = 'active'
+        here.className = 'path'
+      }
+      else {
+        console.log("you can't move into a hedge")
+      }
+    }
+  else {
+    console.log('invalid move')
+   }
+ }
+
 // function moveUp() {
 //   var here = $('.active')
 //   var checkNull = here.previousElementSibling;
