@@ -9,9 +9,6 @@
   width:100px;
 }*/
 
-#active{
-  background-color:red;
-}
 
 #easy-maze .row {
 
@@ -34,6 +31,9 @@
   background-color: yellow;
 }
 
+.active{
+  background-color:red;
+}
 
 
 
