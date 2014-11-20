@@ -68,14 +68,24 @@ function moveDown() {
       // console.log("I increased the count")
     checkNull = checkNull.previousElementSibling;
   }
-  console.log(index)
-
-var hereParent = here.parentElement
-var hereParentSibling = hereParent.nextElementSibling
-var down = hereParentSibling.children[index]
-down.className = 'active'
-here.className = 'path'
-}
+  // console.log(index)
+  var hereParent = here.parentElement
+  var hereParentSibling = hereParent.nextElementSibling
+  if (hereParentSibling != null) {
+    var down = hereParentSibling.children[index]
+      if (down.className != 'hedge') {
+        down.className = 'active'
+        here.className = 'path'
+      }
+      else {
+        console.log("you can't move into a hedge")
+      }
+    }
+  else {
+    console.log('invalid move')
+   }
+ }
+// }
 
 // function moveUp() {
 //   var here = $('.active')
