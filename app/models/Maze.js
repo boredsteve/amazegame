@@ -5,5 +5,6 @@ function Maze() {
 Maze.prototype = {
   moveCount: function() {
     this.moves += 1
+
   }
 }
