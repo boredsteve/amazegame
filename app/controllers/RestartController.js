@@ -17,7 +17,7 @@ RestartController.prototype = {
     activeElement.removeClass('active')
     activeElement.addClass('path')
     // this.model.moves = 0
-    console.log('after restarting, the moves is ' + this.model.moves)
+    // console.log('after restarting, the moves is ' + this.model.moves)
 
   },
   getMaze: function() {

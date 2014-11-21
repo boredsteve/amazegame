@@ -52,5 +52,7 @@
 .body{
 
 }
-
+.hidden {
+  display: none
+}
 
