@@ -21,6 +21,9 @@ MazeView.prototype = {
       else {
       here.className = 'path'
       right.className = 'active'
+        if(right.id == 'end'){
+          console.log("yay for you")
+        }
     }
   },
   moveLeft: function() {
@@ -87,10 +90,7 @@ MazeView.prototype = {
         // console.log("I increased the count")
       checkNull = checkNull.previousElementSibling;
     }
-
-
      return index;
    },
 }
-
 
