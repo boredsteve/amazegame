@@ -39,8 +39,11 @@ MazeController.prototype = {
             // console.log("number of moves " + this.model.moves);
             break;
         case KEY.P1_RIGHT:
-             this.view.moveRight();
-             this.model.moveCount();
+              this.model.moveCount();
+             if(this.view.moveRight()) {
+                var moves = this.model.moves
+                window.alert ("player one wins! your score is " + moves)
+             }
              // console.log("right key pressed")
              // console.log("number of moves " + this.model.moves);
             break;
@@ -65,6 +68,10 @@ MazeController.prototype = {
         case KEY.P2_RIGHT:
              this.view.moveRight2();
              this.model.moveCount2();
+                   if(this.view.moveRight2()) {
+                var moves2 = this.model.moves2
+                window.alert ("player two wins! your score is " + moves2)
+              }
              // console.log("right key pressed")
              // console.log("number of moves " + this.model.moves);
             break;
