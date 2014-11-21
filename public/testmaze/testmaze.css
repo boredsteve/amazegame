@@ -10,17 +10,27 @@
 }*/
 
 
-#easy-maze .row {
+#easy-maze-p1 .row {
+
+  clear:both; /*makes each row go underneath each other*/
+}
+
+#easy-maze-p2 .row {
 
   clear:both; /*makes each row go underneath each other*/
 }
 
 .row > div{ /*styles all the children of the row*/
 
-  width:2em;
-  height: 2em;
+  width:7em;
+  height: 7em;
   float:left;
 
+}
+
+.space {
+  height:1em;
+  clear:both;
 }
 
 .hedge{
@@ -35,6 +45,12 @@
   background-color:red;
 }
 
+.active2{
+  background-color:pink;
+}
 
+.body{
+
+}
 
 
