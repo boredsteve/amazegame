@@ -80,6 +80,7 @@ MazeView.prototype = {
      }
    },
 
+
   moveRight2: function() {
       var here = document.querySelector(".active2")
       var right = here.nextElementSibling
