@@ -1,16 +1,14 @@
 <html>
   <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
 
     <script type="text/javascript" src="app/controllers/MazeController.js"></script>
+    <script type="text/javascript" src="app/controllers/RestartController.js"></script>
+    <script type="text/javascript" src="app/views/MazeView.js"></script>
+    <script type="text/javascript" src="app/models/Maze.js"></script>
     <script type="text/javascript" src="MazeApp.js"></script>
 
-
-<!--     // <script type="text/javascript" src="app/models/PirateShip.js"></script>
-    // <script type="text/javascript" src="app/views/PirateShipView.js"></script>
-    // <script type="text/javascript" src="app/controllers/PirateShipController.js"></script> -->
- <!--    // <script type="text/javascript" src="app/views/MazeView.js"></script> -->
-
-    <link href="public/css/maze.css" rel="stylesheet" type="text/css" media="all">
+    <link href="public/testmaze/testmaze.css" rel="stylesheet" type="text/css" media="all">
 
   </head>
 
@@ -19,50 +17,41 @@
 
   <body>
 
-    <!-- <button id="move-pirate-ship">Arrr!</button>
-    <img id="pirate-ship" alt="Pirate Ship" src="public/images/pirate-ship.png" /> -->
-
-
-
-
   <div id = "easy-maze">
       <!-- row1 -->
     <div class="row">
-      <div class = "path"></div>
+      <div id="start" class = "active path"></div>
       <div class = "path"></div>
       <div class = "hedge"></div>
-      <div class = "hedge "></div>
+      <div class = "hedge"></div>
     </div>
     <!-- row2 -->
-    <div class="row" id = "row2">
-       <div class = "hedge "></div>
+    <div class="row">
+       <div class = "hedge"></div>
       <div class = "path"></div>
-       <div class = "hedge "></div>
-       <div class = "hedge "></div>
+       <div class = "hedge"></div>
+       <div class = "hedge"></div>
     </div>
     <!-- row3 -->
     <div class="row">
-       <div class = "hedge "></div>
+       <div class = "hedge"></div>
       <div class = "path"></div>
       <div class = "path"></div>
       <div class = "path"></div>
     </div>
     <!-- row4 -->
     <div class="row">
-       <div class = "hedge "></div>
-       <div class = "hedge "></div>
-       <div class = "hedge "></div>
-       <div class = "hedge "></div>
+       <div class = "hedge"></div>
+       <div class = "hedge"></div>
+       <div class = "hedge"></div>
+       <div class = "hedge"></div>
     </div>
   </div>
-<!--   <div id = "maze"> -->
 
+<!-- button stuff -->
 
-
-<!--
-  </div> -->
-
-
+<br><br>
+<div id="restart">  <button id="restartgame">Restart!</button> </div>
 
 
 
