@@ -1,13 +1,18 @@
-var RestartController = function() {
-
+var RestartController = function(model, view) {
+  this.model = model
+  this.view = view
 }
 
 RestartController.prototype = {
   start: function() {
-    var restartButton = document.querySelector("#restartgame");
-    restartButton.addEventListener("click", this.restartGame.bind(this))
+    this.view.getRestartButton().addEventListener("click", this.restartGame.bind(this))
   },
   restartGame: function () {
+
+    this.view.resetView();
+    this.model.resetMoves();
+    console.log(this.model.moves)
+
     // console.log("restarting game......")
     var activeElement = $(".active")
     console.log("active = ", activeElement)
@@ -27,7 +32,4 @@ RestartController.prototype = {
 
 
   },
-  getMaze: function() {
-    return this.model
-  }
 }

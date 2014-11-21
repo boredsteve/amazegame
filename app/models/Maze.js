@@ -10,7 +10,7 @@ Maze.prototype = {
   },
   moveCount2: function() {
     this.moves2 += 1
-    console.log("moves2 is " + this.moves)
+    console.log("moves2 is " + this.moves2)
   },
   resetMoves: function() {
     this.moves = 0
