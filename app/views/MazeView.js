@@ -23,6 +23,8 @@ MazeView.prototype = {
       right.className = 'active'
         if(right.id == 'end'){
           console.log("yay for you")
+          moves = Maze.moves
+          window.alert ("you win! your score is " + moves)
         }
     }
   },
