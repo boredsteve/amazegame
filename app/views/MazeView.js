@@ -20,10 +20,10 @@ MazeView.prototype = {
       right.className = 'active'
         if(right.id == 'end'){
           console.log("yay for you")
-          moves = Maze.moves
-          window.alert ("you win! your score is " + moves)
+          return true
         }
     }
+    return false
   },
   moveLeft: function() {
       var here = document.querySelector(".active")
@@ -80,6 +80,7 @@ MazeView.prototype = {
      }
    },
 
+
   moveRight2: function() {
       var here = document.querySelector(".active2")
       var right = here.nextElementSibling
@@ -93,8 +94,10 @@ MazeView.prototype = {
       right.className = 'active2'
         if(right.id == 'end2'){
           console.log("yay for you")
+          return true
         }
     }
+    return false
   },
   moveLeft2: function() {
       var here = document.querySelector(".active2")

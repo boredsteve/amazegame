@@ -25,6 +25,7 @@ RestartController.prototype = {
     activeElement2.removeClass('active2')
     activeElement2.addClass('path')
 
+
   },
   getMaze: function() {
     return this.model
