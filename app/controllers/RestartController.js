@@ -17,7 +17,14 @@ RestartController.prototype = {
     activeElement.removeClass('active')
     activeElement.addClass('path')
     // this.model.moves = 0
-    // console.log('after restarting, the moves is ' + this.model.moves)
+    var activeElement2 = $(".active2")
+    console.log("active2 = ", activeElement2)
+    var startElement2 = $("#start2")
+    console.log("start = ", startElement2)
+    startElement2.addClass('active2')
+    activeElement2.removeClass('active2')
+    activeElement2.addClass('path')
+
 
   },
   getMaze: function() {
