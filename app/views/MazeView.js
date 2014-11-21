@@ -59,7 +59,7 @@ MazeView.prototype = {
    },
    moveUp: function() {
     var index = this.getIndex()
-     var here = document.querySelector(".active")
+    var here = document.querySelector(".active")
 
     var hereParent = here.parentElement
     var hereParentSibling = hereParent.previousElementSibling
@@ -169,6 +169,31 @@ MazeView.prototype = {
       checkNull = checkNull.previousElementSibling;
     }
      return index;
+   },
+   getRestartButton: function() {
+        var restartButton = document.querySelector("#restartgame");
+        return restartButton;
+   },
+   resetView: function() {
+    console.log("restarting game......")
+    var activeElement = $(".active")
+    console.log("active = ", activeElement)
+    var startElement = $("#start")
+    console.log("start = ", startElement)
+    activeElement.removeClass('active')
+    startElement.addClass('active')
+    activeElement.addClass('path')
+    // this.model.moves = 0
+    var activeElement2 = $(".active2")
+    console.log("active2 = ", activeElement2)
+    var startElement2 = $("#start2")
+    console.log("start = ", startElement2)
+    activeElement2.addClass('path')
+    activeElement2.removeClass('active2')
+    startElement2.addClass('active2')
+
+
+
    },
 }
 

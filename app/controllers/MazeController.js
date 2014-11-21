@@ -11,13 +11,14 @@ var KEY = {
 
 var MazeController = function() {
   this.view  = new MazeView()
-  this.restartCtrl = new RestartController()
   // this.model = this.restartCtrl.getMaze()
   this.model = new Maze()
+  this.restartCtrl = new RestartController(this.model, this.view)
 }
 
 MazeController.prototype = {
   start: function() {
+    this.restartCtrl.start()
     this.bindListeners()
     // console.log("number of moves " + this.model.moves);
   },
