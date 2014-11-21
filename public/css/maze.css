@@ -11,10 +11,16 @@
 
 
 
-#easy-maze .row {
+#easy-maze-p1 .row {
 
   clear:both;
 }
+
+#easy-maze-p2 .row {
+
+  clear:both;
+}
+
 .row > div{
 
   width:2em;
